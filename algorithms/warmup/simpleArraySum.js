@@ -6,7 +6,7 @@ const simpleArraySum = (size, array) => {
     }
 
     return result;
-}
+};
 
 const main = () => {
     let size = parseInt(readLine());
@@ -14,4 +14,4 @@ const main = () => {
 
     process.stdout.write("" + simpleArraySum(size, array) + "\n");
 
-}
+};

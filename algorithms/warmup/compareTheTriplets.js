@@ -9,9 +9,9 @@ const solve = (a0, a1, a2, b0, b1, b2) => {
        aliceRating > bobRating && results[0]++;
        bobRating > aliceRating && results[1]++;
     });
-    
+
     return results;
-}
+};
 
 const main = () => {
     let a0_temp = readLine().split(' ');
@@ -24,4 +24,4 @@ const main = () => {
     let b2 = parseInt(b0_temp[2]);
 
     console.log(solve(a0, a1, a2, b0, b1, b2).join(" "));
-}
+};

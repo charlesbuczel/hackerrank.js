@@ -5,4 +5,4 @@ const main = () => {
     let b = parseInt(readLine());;
 
     console.log(solveMeFirst(a, b));
-}
+};
