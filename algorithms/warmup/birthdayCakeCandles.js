@@ -1,12 +1,12 @@
 const birthdayCakeCandles = (array) => {
-    const maxHeight = Math.max.apply(null, array);
+  const maxHeight = Math.max.apply(null, array);
 
-    return array.filter((candleHeight) => candleHeight === maxHeight).length;
+  return array.filter((candleHeight) => candleHeight === maxHeight).length;
 };
 
 const main = () => {
-    const n = parseInt(readLine());
-    const array = readLine().split(' ').map(Number);
+  const n = parseInt(readLine());
+  const array = readLine().split(' ').map(Number);
 
-    console.log(birthdayCakeCandles(array));
+  console.log(birthdayCakeCandles(array));
 };
