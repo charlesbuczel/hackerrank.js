@@ -26,26 +26,21 @@ const readLine = () => inputString[currentLine++];
 const serviceLane = (width, cases) => cases
   .map(c => Math.min.apply(Math, width.slice(c[0], c[1] + 1))); 
 
-function main() {
+const main = () => {
   const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
   const nt = readLine().split(' ');
-
-  const n = parseInt(nt[0], 10);
-
   const t = parseInt(nt[1], 10);
 
   const width = readLine().split(' ').map(widthTemp => parseInt(widthTemp, 10));
 
-  let cases = Array(t);
+  const cases = Array(t);
 
   for (let i = 0; i < t; i++) {
     cases[i] = readLine().split(' ').map(casesTemp => parseInt(casesTemp, 10));
   }
 
-  let result = serviceLane(width, cases);
-
-  ws.write(result.join("\n") + "\n");
+  ws.write(serviceLane(width, cases).join("\n") + "\n");
 
   ws.end();
 }
