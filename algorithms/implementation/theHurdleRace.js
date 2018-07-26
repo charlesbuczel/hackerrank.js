@@ -35,6 +35,6 @@ const main = () => {
     const k = parseInt(nk[1], 10);
     const height = readLine().split(' ').map(heightTemp => parseInt(heightTemp, 10));
 
-    ws.write(hurdleRace(k, height); + "\n");
+    ws.write(hurdleRace(k, height) + "\n");
     ws.end();
 };
