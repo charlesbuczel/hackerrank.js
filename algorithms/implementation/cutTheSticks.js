@@ -26,7 +26,7 @@ process.stdin.on('end', () => {
 const cutTheSticks = (arr) => {
   const sticksRemaining = [];
 
-  arr.sort();
+  arr.sort((a, b) => a - b);
 
   while (arr.length !== 0) {
     sticksRemaining.push(arr.length);
