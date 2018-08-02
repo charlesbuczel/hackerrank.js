@@ -36,7 +36,7 @@ const median = (input) => {
   input.sort((a, b) => a - b);
 
   let median = input.length % 2 ?
-    input[Math.ceil(input.length / 2)] :
+    input[Math.floor(input.length / 2)] :
     (input[input.length / 2] + input[(input.length / 2) - 1]) / 2;
 
   return median.toFixed(1);
