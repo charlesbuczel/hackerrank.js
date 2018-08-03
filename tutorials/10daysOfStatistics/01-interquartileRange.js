@@ -1,4 +1,4 @@
-//https://www.hackerrank.com/challenges/s10-quartiles/problem
+//https://www.hackerrank.com/challenges/s10-interquartile-range/problem
 'use strict';
 
 process.stdin.resume();
