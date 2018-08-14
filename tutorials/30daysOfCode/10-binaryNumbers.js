@@ -23,7 +23,22 @@ process.stdin.on('end', () => {
 });
 
 const main = () => {
-  const n = parseInt(readLine(), 10);
+  let n = parseInt(readLine(), 10);
+  const binary = [];
+  let remainder;
+  let max = 0;
+  let current = 0;
 
-  
+  while (n > 0) {
+    remainder = n % 2;
+    n = Math.floor(n / 2);
+    if (remainder) {
+      current++;
+      max = current > max ? current : max;
+    } else {
+      current = 0;
+    }
+  }
+
+  console.log(max);
 };
