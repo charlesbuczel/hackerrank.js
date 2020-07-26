@@ -1,6 +1,6 @@
-# Hackerrank.js
+# hackerrank.js
 
-Hackerrank solutions in JavaScript (ES6+).Practice challenges only.
+HackerRank solutions in JavaScript (ES6+).Practice challenges only.
 
 # Categories
 
